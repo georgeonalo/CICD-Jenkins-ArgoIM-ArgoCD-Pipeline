@@ -19,3 +19,4 @@ spec:
         image: abhishekf5/todo-app:v1
         ports:
         - containerPort: 8000
+
