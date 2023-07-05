@@ -12,7 +12,8 @@ In this project i did an end to end deployment of a spring-boot-app in kubernete
 The Project is divided into two sections; **Continous Integration(CI)** and **Continous Deployment(CD)**
 
 Below are the steps taken to complete this project.
-## STEPS
+
+## STEPS for Continous Integration(CI)
 1. Launch an ubuntu ec2 machine and ssh into it.
 1. update package manager
 2. install java openjdk-11
@@ -141,6 +142,25 @@ The Job succeeded after the 3rd attempt.
 ![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/6795ac1d-278a-43a9-869d-8bc1908999f0)
 
 ![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/208c90a3-2aec-4c74-b473-2de6fdb7244b)
+
+
+
+That does it for the **Continous integration(CI)** part of the project, next is to proceed to the **Continous Deployment(CD)** part
+
+
+
+
+## Set up ArgoCD on Kubernetes cluster to deploy our spring boot app
+
+For my ArgoCD set up, i used terraform to provision AWS EKS cluster and installed the argocd server. Click on this link; [ArgoCD installation using Terraform with AWS EKS](https://github.com/georgeonalo/aws-eks-terraform)
+
+
+
+![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/1fc0ef42-d6a8-4954-b909-23d5d22b3e12)
+
+
+
+
 
 
 
