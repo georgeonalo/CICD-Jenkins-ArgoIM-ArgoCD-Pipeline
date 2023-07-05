@@ -1,4 +1,4 @@
-# Deploy a java spring-boot-app in kubernetes with ArgoCD
+# Deploy a java spring-boot-app with CICD in k8s using Jenkins, GitHub Pipeline, Docker, SonarQube and ArgoCD
 
 
 In this project i did an end to end deployment of a spring-boot-app in kubernetes cluster using; **ArgoCD**, **Jenkins**, **Docker pipeline**, **SonarQube** and **GitHub Pipeline**
