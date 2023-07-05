@@ -19,3 +19,4 @@ spec:
         image: georgenal/ultimate-cicd:3
         ports:
         - containerPort: 8080
+
