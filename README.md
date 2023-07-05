@@ -3,10 +3,15 @@
 
 In this project i did an end to end deployment of a spring-boot-app in kubernetes cluster using; **ArgoCD**, **Jenkins**, **Docker pipeline**, **SonarQube** and **GitHub Pipeline**
 
+## Project Overview
+
+
+![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/b3ef3b03-ff96-474f-9e36-d346e9fd05fb)
+
+
 The Project is divided into two sections; **Continous Integration(CI)** and **Continous Deployment(CD)**
 
-Below are the steps taken to complete this project, please note to run any specific command click on this link; [Project Installation Commands](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/blob/main/Project%20Installation%20Commands)
-
+Below are the steps taken to complete this project.
 ## STEPS
 1. Launch an ubuntu ec2 machine and ssh into it.
 1. update package manager
@@ -32,6 +37,64 @@ Below are the steps taken to complete this project, please note to run any speci
 21. we will also update our jenkinsfile to reflect the sonarqube ip address before we run the job.
 22. now lets run the job… our expected outcome is the final artifact is containerized as a docker image and pushed to dockerhub with the build number as the tag.
 23. we should also check our SCM (github) repo to confirm that the manifest file has been updated to reflect the new image tag.
+
+
+
+## Launch an EC2 machine and SSH into it.
+
+
+![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/b99f397d-9388-4bbd-ab88-45e66b6c622c)
+
+
+![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/ce1d7f7d-6c60-4997-b8b2-909a5cbcb39d)
+
+
+## Install Jenkins, configure Docker as agent, set up cicd, deploy applications to k8s and much more.
+
+To run any specific installation command click on this link; [Project Installation Commands](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/blob/main/Project%20Installation%20Commands)
+
+
+
+## Login to Jenkins using the below URL:
+http://:8080 [You can get the ec2-instance-public-ip-address from your AWS EC2 console page]
+
+Note: If you are not interested in allowing All Traffic to your EC2 instance 1. Delete the inbound traffic rule for your instance 2. Edit the inbound traffic rule to only allow custom TCP port 8080
+
+After you login to Jenkins, - Run the command to copy the Jenkins Admin Password - sudo cat /var/lib/jenkins/secrets/initialAdminPassword - Enter the Administrator password
+
+
+
+![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/a145234d-80e5-4429-bbcb-c1bf6956762e)
+
+
+
+## Click on Install suggested plugins
+
+
+![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/875e75c2-593e-4102-bbbc-b8e4f64857f8)
+
+Wait for the Jenkins to Install suggested plugins
+
+![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/ce852f5a-35ff-40d4-9306-c2f827ab46ac)
+
+
+
+Create First Admin User or Skip the step [If you want to use this Jenkins instance for future use-cases as well, better to create admin user]
+
+
+![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/5a046df9-4112-46d0-b446-41182545d7f1)
+
+
+![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/5eeb3bfb-3a53-4225-ae86-c51e13b034aa)
+
+
+![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/782b9915-385c-465a-8e09-69aaad96d445)
+
+
+
+
+
+
 
 
 
