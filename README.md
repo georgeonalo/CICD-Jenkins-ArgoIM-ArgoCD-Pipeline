@@ -141,6 +141,10 @@ The Job succeeded after the 3rd attempt.
 
 
 
+Yes it has.
+
+
+
 ## Check the SCM (github) and docker repo to confirm that the manifest file has been updated to reflect the new image tag
 
 
