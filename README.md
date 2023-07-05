@@ -5,7 +5,7 @@ In this project i did an end to end deployment of a spring-boot-app in kubernete
 
 The Project is divided into two sections; **Continous Integration(CI)** and **Continous Deployment(CD)**
 
-Below are the steps taken to complete this project, please note to run any specific command click on this link; [Project Installation Commands]()
+Below are the steps taken to complete this project, please note to run any specific command click on this link; [Project Installation Commands](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/blob/main/Project%20Installation%20Commands)
 
 ## STEPS
 1. Launch an ubuntu ec2 machine and ssh into it.
