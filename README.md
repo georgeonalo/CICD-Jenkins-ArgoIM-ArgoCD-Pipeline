@@ -92,6 +92,60 @@ Create First Admin User or Skip the step [If you want to use this Jenkins instan
 
 
 
+## Install docker pipeline and Sonarqube plugin
+
+![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/933e00d1-5827-4637-97e2-5e5c22ebf5af)
+
+![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/0e756195-5743-4c29-a0a6-a4f02c224142)
+
+
+## Configure a Sonar Server
+
+To do this,  Click on this link; [Project Installation Commands](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/blob/main/Project%20Installation%20Commands)
+
+
+![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/abc0a457-6c12-4a7d-b4f0-784c30f6c914)
+
+
+
+## Integrate our SCM (github), our container registry (dockerhub) and our code analysis tool (sonarqube) with jenkins using credentials
+
+
+##  Build jenkins pipeline using the pipeline option
+
+
+![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/d2c2c5f7-8e5b-4d4a-8065-65dcd4085a4b)
+
+
+
+##  now lets run the job
+
+Before this, ensure to update the jenkinsfile to reflect the sonarqube ip address
+
+
+
+![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/3e19cffb-5d6e-4239-b1c2-0e22f64a7420)
+
+
+Hurraaaaaaay!!!!
+
+The Job succeeded after the 3rd attempt.
+
+
+
+## Check the SCM (github) and docker repo to confirm that the manifest file has been updated to reflect the new image tag
+
+
+![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/cbf0c84b-03dd-40d5-90ce-20bcd601e9bb)
+
+![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/6795ac1d-278a-43a9-869d-8bc1908999f0)
+
+![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/208c90a3-2aec-4c74-b473-2de6fdb7244b)
+
+
+
+
+
 
 
 
