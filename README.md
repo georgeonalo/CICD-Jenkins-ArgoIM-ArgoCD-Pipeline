@@ -89,7 +89,8 @@ Create First Admin User or Skip the step [If you want to use this Jenkins instan
 ![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/5eeb3bfb-3a53-4225-ae86-c51e13b034aa)
 
 
-![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/782b9915-385c-465a-8e09-69aaad96d445)
+![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/58b8bdaa-c604-4fef-a1e0-376a40025ac2)
+
 
 
 
@@ -133,6 +134,12 @@ Hurraaaaaaay!!!!
 The Job succeeded after the 3rd attempt.
 
 
+## Check the sonar server to see if the sonar configuration has passed
+
+
+![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/ec637a0d-a34f-4fa0-84c6-0880bc59a67a)
+
+
 
 ## Check the SCM (github) and docker repo to confirm that the manifest file has been updated to reflect the new image tag
 
@@ -157,6 +164,58 @@ For my ArgoCD set up, i used terraform to provision AWS EKS cluster and installe
 
 
 ![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/1fc0ef42-d6a8-4954-b909-23d5d22b3e12)
+
+
+
+
+## Create Application
+
+Click on create application in the ArgoCD home page and enter **Application name**, **Project name**, enter 'Automatic' for **SYNC POLICY**, scroll down and provide the **Repository URL, Path, Cluster URL** and enter default for **NAMESPACE**, then click **Create**
+
+
+![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/8635eaf3-97fa-4e7f-b054-762f8fff7f42)
+
+![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/fe2c1ede-02b9-4218-af26-2148429ed81c)
+
+![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/ecf0d38d-98e8-42f3-9e42-ec76f40e529f)
+
+![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/2ace7c12-b908-4269-93ac-50d2bb93dc2c)
+
+
+![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/42dabb82-6970-41bb-bba1-ffd3d84586e8)
+
+
+![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/73b23a59-9853-42f2-90cc-2633b56e702a)
+
+
+So there you have it, our application is deployed.
+
+## Run the commands below to see the deployments and pods
+
+```
+kubectl get deploy
+kubectl get pod
+```
+
+![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/fc92f8e3-7eb9-40a5-84d0-367c82d8ec97)
+
+
+They are all running
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
