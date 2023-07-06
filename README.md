@@ -6,7 +6,10 @@ In this project i did an end to end deployment of a spring-boot-app in kubernete
 ## Project Overview
 
 
-![image](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/b3ef3b03-ff96-474f-9e36-d346e9fd05fb)
+![argocd cicd](https://github.com/georgeonalo/CICD-Jenkins-ArgoIM-ArgoCD-Pipeline/assets/115881685/45e0d379-be7a-4e17-b91d-5baa511a8843)
+
+
+
 
 
 The Project is divided into two sections; **Continous Integration(CI)** and **Continous Deployment(CD)**
