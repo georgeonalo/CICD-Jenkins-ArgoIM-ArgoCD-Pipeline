@@ -31,10 +31,10 @@ Below are the steps taken to complete this project.
 11. navigate to manage jenkins and select plugins
 12. add docker pipeline and sonarqube scanner plugins from the available plugins tab
 13. install and restart jenkins
-14. on the cli, lets update the package manager and install docker so we can pull and use our maven image as our jenkins effemeral slave
+14. on the cli, update the package manager and install docker so we can pull and use our maven image as our jenkins effemeral slave
 15. after docker installation, navigate to root and add jenkins and ubuntu (in this case) users to the docker group and restart docker daemon
-16. we now need to create a sonarqube user who own sonarqube package in the server
-17. now lets change to our sonarqube user and install sonarqube for scanning our code
+16. Create a sonarqube user who own sonarqube package in the server
+17. Change to our sonarqube user and install sonarqube for scanning our code
 18. we can now access sonarqube on the web browser and login with admin/admin…thereafter you can change your username and password…access is via server publicIP on port 9000.
 19. now lets integrate our SCM (github), our container registry (dockerhub) and our code analysis tool (sonarqube) with jenkins…restart jenkins after this.
 20. we can now build our jenkins pipeline using the pipeline option
